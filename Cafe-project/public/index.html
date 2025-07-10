@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa" dir="rtl" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="./images/fav-icon.png" type="image/x-icon">
 </head>
 
-<body>
+<body class="font-dana bg-gray-100 dark:bg-zinc-800">
     <!-- all app icons -->
     <svg class="hidden">
         <symbol id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -34,7 +34,7 @@
         </symbol>
 
     </svg>
-    <header class="bg-black/50 w-[90%] h-24 pr-10 pl-4 py-5 mx-auto rounded-3xl flex">
+    <header class="fixed top-9 right-0 left-0  bg-black/50 w-[90%] h-24 pr-10 px-5 mx-auto rounded-3xl flex backdrop-blur-[6px]">
         <div class="flex w-full items-center justify-between">
             <!-- logo & menu -->
             <nav class="flex items-center">
@@ -43,8 +43,8 @@
                     <img src="./images/app-logo.png" alt="app logo">
                 </div>
                 <!-- menu -->
-                <ul class="flex mr-9 gap-x-9">
-                    <li>
+                <ul class="flex mr-9 gap-x-9 text-xl text-gray-300 tracking-tightest">
+                    <li class="font-dana-medium text-orange-200">
                         <a href="#">صفحه اصلی</a>
                     </li>
                     <!-- has subMenu -->
@@ -87,9 +87,9 @@
                 </ul>
             </nav>
             <!-- basket & login & theme Btn -->
-            <div class="flex">
+            <div class="flex text-xl text-orange-200 gap-x-10">
                 <!-- basket icon & theme Btn -->
-                <div class="flex gap-x-5">
+                <div class="flex gap-x-5 items-center">
                     <!-- basket -->
                     <div>
                         <svg class="w-8 h-8">
@@ -103,8 +103,9 @@
                         </svg>
                     </div>
                 </div>
+                <div class="w-px h-14 bg-white/20"></div>
                 <!-- login Link -->
-                <a href="#" class="flex">
+                <a href="#" class="flex items-center gap-x-2.5 tracking-tightest">
                     <svg class="w-8 h-8">
                         <use xlink:href="#arrow-right-end-on-rectangle"></use>
                     </svg>
