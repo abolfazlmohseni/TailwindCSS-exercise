@@ -45,8 +45,10 @@
     --font-moraba-medium: moraba-medium;
     --font-moraba-bold: moraba-bold;
     --tracking-tightest: -0.065em;
+    --spacing-30: 7.5rem;
 }
-body{
-    background-image: url(../images/headerBgDesktop.png);
+
+body {
+    background-image: url(../images/headerBgDesktop.webp);
     background-repeat: no-repeat;
 }
