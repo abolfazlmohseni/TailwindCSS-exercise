@@ -52,3 +52,31 @@ body {
     background-image: url(../images/headerBgDesktop.webp);
     background-repeat: no-repeat;
 }
+
+.submenu__item-active::after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 100px;
+    background-color: #FDba74;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.submenu__item-active {
+    position: relative;
+    padding-right: 10px;
+    color: #FDba74;
+}
+
+.subMenu {
+    @apply max-h-6 overflow-hidden transition-all
+}
+
+.subMenu--open {
+    @apply max-h-56
+}
