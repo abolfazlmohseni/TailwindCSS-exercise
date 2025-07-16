@@ -17,7 +17,7 @@
 
 @font-face {
     font-family: moraba;
-    src: url(../fonts/moraba/Dana-Regular.woff2);
+    src: url(../fonts/moraba/Morabba-Light.woff2);
 }
 
 @font-face {
@@ -27,7 +27,7 @@
 
 @font-face {
     font-family: moraba-bold;
-    src: url(../fonts/moraba/Dana-DemiBold.woff2);
+    src: url(../fonts/moraba/Morabba-Medium.woff2);
 }
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
@@ -46,11 +46,9 @@
     --font-moraba-bold: moraba-bold;
     --tracking-tightest: -0.065em;
     --spacing-30: 7.5rem;
-}
-
-body {
-    background-image: url(../images/headerBgDesktop.webp);
-    background-repeat: no-repeat;
+    --color-home-mobile: url("../images/headerBgMobile.webp");
+    --color-home-Desktop: url("../images/headerBgDesktop.webp");
+    
 }
 
 .submenu__item-active::after {

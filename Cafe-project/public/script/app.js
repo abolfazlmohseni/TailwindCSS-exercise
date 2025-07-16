@@ -45,12 +45,40 @@ closeMenu.addEventListener("click", () => {
 })
 
 overlay.addEventListener("click", () => {
-    menuMange()
+    if (menu.classList.contains("right-0")) {
+        menuMange()
+    }
 })
 
 const menuMange = () => {
     menu.classList.toggle("-right-64")
     menu.classList.toggle("right-0")
+    overlay.classList.toggle("hidden")
+    overlay.classList.toggle("flex")
+}
+
+const bascket = document.querySelector(".bascket")
+const bascketBtn = document.querySelector(".bascketBtn")
+const basketClose = document.querySelector(".basketClose")
+
+bascketBtn.addEventListener("click", () => {
+    bascketMange()
+})
+
+basketClose.addEventListener("click", () => {
+    bascketMange()
+})
+
+overlay.addEventListener("click", () => {
+    if (bascket.classList.contains("left-0")) {
+        bascketMange()
+    }
+
+})
+
+const bascketMange = () => {
+    bascket.classList.toggle("-left-64")
+    bascket.classList.toggle("left-0")
     overlay.classList.toggle("hidden")
     overlay.classList.toggle("flex")
 }
