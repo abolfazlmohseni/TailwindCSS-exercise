@@ -48,7 +48,7 @@
     --spacing-30: 7.5rem;
     --color-home-mobile: url("../images/headerBgMobile.webp");
     --color-home-Desktop: url("../images/headerBgDesktop.webp");
-    
+
 }
 
 .submenu__item-active::after {
@@ -77,4 +77,21 @@
 
 .subMenu--open {
     @apply max-h-56
+}
+
+.circle {
+    @apply flex items-center justify-center rounded-full border;
+}
+
+.circle--lg {
+    @apply w-[203px] h-[203px] border-white/25;
+}
+
+.circle--md {
+    @apply w-[145px] h-[145px] border-white/50;
+
+}
+
+.circle--sm {
+    @apply w-[95px] h-[95px] border-white/80;
 }
